@@ -23,6 +23,8 @@ export class CheeseTouch extends Worker {
   constructor () {
     super()
 
+    this.setStatus('watching', 'the Cheese')
+
     this.commands
       .prefix('ct!')
       .load(path.resolve(__dirname, '../commands'))
