@@ -24,9 +24,6 @@ export class CheeseTouch extends Worker {
     super()
 
     this.commands
-      .options({
-        interactionGuild: '569907007465848842'
-      })
       .prefix('ct!')
       .load(path.resolve(__dirname, '../commands'))
 
