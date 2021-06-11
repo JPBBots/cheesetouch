@@ -48,7 +48,7 @@ export class ModifierManager {
 
   async permanent (touch: ITouch, to: Snowflake, msg: APIMessage, db: IGuild): Promise<boolean> {
     // throw new Error('This cheese touch is permanent and can\'t be transfered.')
-    return true
+    return touch.current === msg.author.id
   }
 
   async manifest (touch: ITouch, to: Snowflake, msg: APIMessage, db: IGuild): Promise<boolean> {
