@@ -11,21 +11,21 @@ export default {
     options: [{
       name: 'reactions',
       description: 'Sets whether or not reactions will be added if a user has the cheesetouch',
-      type: ApplicationCommandOptionType.SUB_COMMAND,
+      type: ApplicationCommandOptionType.SubCommand,
       options: [{
         name: 'value',
         description: 'Whether or not to enable cheesetouch reactions',
-        type: ApplicationCommandOptionType.BOOLEAN,
+        type: ApplicationCommandOptionType.Boolean,
         required: true
       }]
     }, {
       name: 'role',
       description: 'Sets a role that gets added to a user when they get the cheesetouch',
-      type: ApplicationCommandOptionType.SUB_COMMAND,
+      type: ApplicationCommandOptionType.SubCommand,
       options: [{
         name: 'role',
         description: 'Role to set as the cheesetouch role',
-        type: ApplicationCommandOptionType.ROLE,
+        type: ApplicationCommandOptionType.Role,
         required: true
       }]
     }]

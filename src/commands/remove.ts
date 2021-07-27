@@ -12,7 +12,7 @@ export default {
     options: [{
       name: 'user',
       description: 'User to remove the cheese touch from',
-      type: ApplicationCommandOptionType.USER,
+      type: ApplicationCommandOptionType.User,
       required: true
     }]
   },

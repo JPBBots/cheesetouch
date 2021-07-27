@@ -1,5 +1,5 @@
 import { Snowflake } from 'discord-api-types'
-import { Database as Db } from 'interface/dist/Database'
+import { Database as Db } from '@jpbbots/interface/dist/Database'
 import { Collection } from 'mongodb'
 
 import { Modifiers } from './Modifiers'

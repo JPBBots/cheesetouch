@@ -2,7 +2,7 @@
   "name": "cheesetouch",
   "version": "1.0.0",
   "description": "Cheese Touch Discord Bot",
-  "main": "dist/master.js",
+  "main": "dist/worker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,12 +19,12 @@
   "dependencies": {
     "@discord-rose/permissions-middleware": "^1.2.0",
     "@discordjs/collection": "^0.1.6",
+    "@jpbbots/interface": "^1.0.2",
     "@types/node": "^15.12.1",
     "discord-rose": "github:discord-rose/discord-rose#build",
-    "interface": "github:jpbbots/interface",
     "mongodb": "^3.6.9"
   },
   "devDependencies": {
-    "discord-api-types": "^0.18.1"
+    "discord-api-types": "^0.21.0-next.6f15e53.1627388966"
   }
 }

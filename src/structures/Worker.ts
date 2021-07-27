@@ -1,4 +1,4 @@
-import { Embed, Worker } from 'discord-rose'
+import { Embed, SingleWorker } from 'discord-rose'
 import config from '../config'
 
 const cheese = '🧀'
@@ -15,13 +15,20 @@ import { Handler } from '../handlers/message'
 
 global.ROSE_DEFAULT_EMBED.color = 0xfac10c
 
-export class CheeseTouch extends Worker {
+export class CheeseTouch extends SingleWorker {
   db = new Database('localhost', 'cheesetouch', config.dbPass)
   mods = new ModifierManager(this)
   keeps = new KeepsManager()
 
   constructor () {
-    super()
+    super({
+      token: config.token,
+      cacheControl: {
+        guilds: ['owner_id'],
+        channels: ['permission_overwrites'],
+        roles: ['permissions', 'position']
+      }
+    })
 
     this.setStatus('watching', 'the Cheese')
 

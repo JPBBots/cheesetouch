@@ -11,7 +11,7 @@ export default {
     options: [{
       name: 'user',
       description: 'User to add a cheese touch to',
-      type: ApplicationCommandOptionType.USER,
+      type: ApplicationCommandOptionType.User,
       required: true
     }]
   },
