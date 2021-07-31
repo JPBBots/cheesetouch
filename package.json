@@ -21,7 +21,7 @@
     "@discordjs/collection": "^0.1.6",
     "@jpbbots/interface": "^1.0.2",
     "@types/node": "^15.12.1",
-    "discord-rose": "github:discord-rose/discord-rose#build",
+    "discord-rose": "^1.5.0",
     "mongodb": "^3.6.9"
   },
   "devDependencies": {
