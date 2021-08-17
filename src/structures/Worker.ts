@@ -46,6 +46,7 @@ export class CheeseTouch extends SingleWorker {
           if (guild.reactions) {
             this.api.messages.react(msg.channel_id, msg.id, cheese)
               .then(() => {
+                if (thing.persist) { return }
                 setTimeout(() => {
                   this.api.messages.deleteReaction(msg.channel_id, msg.id, cheese)
                 }, 3e3)
