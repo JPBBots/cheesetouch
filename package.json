@@ -19,7 +19,7 @@
   "dependencies": {
     "@discord-rose/permissions-middleware": "^1.2.0",
     "@discordjs/collection": "^0.1.6",
-    "@jpbbots/interface": "^1.0.2",
+    "@jpbbots/interface": "^1.0.6",
     "@types/node": "^15.12.1",
     "discord-rose": "^1.5.0",
     "mongodb": "^3.6.9"
